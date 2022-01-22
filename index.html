@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debdeep first website</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&family=Be+Vietnam+Pro:wght@100&family=Oswald:wght@700&family=Roboto:wght@100&family=Spline+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('./img/bg.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid rgb(56, 139, 233); */
+            position: absolute;
+            left: 34px;
+            top: 18px;
+        }
+
+        .left img {
+            width: 113px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 1px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 45%;
+            margin: 7px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 31px;
+            top: 19px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            color: white;
+            display: inline-block;
+            font-size: 21px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: #9A7B4F;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: rgb(206, 179, 143);
+            padding: 4px 14px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        input:focus {
+            outline: none;
+            border: 0;
+        }
+
+        .container {
+            /* border: 3px solid red; */
+            margin: 139px 383px;
+            padding: 17px;
+            width: 519px;
+            border-radius: 9px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 199px;
+            padding: 4px;
+            border: 2px solid rgb(238, 171, 83);
+            margin: 11px auto;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="./img/logo.png" alt="">
+            <div>Inside Decoration</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href=#>Home</a></li>
+                <li><a href=#>About Us</a></li>
+                <li><a href=#>Decorations</a></li>
+                <li><a href=#>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Facebook</button>
+            <button class="btn">Gmail</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>TAKE YOUR LIVING ROOM TO A NEW ERA</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
